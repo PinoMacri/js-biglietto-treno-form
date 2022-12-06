@@ -21,6 +21,8 @@ button.addEventListener("click" , function (){
     const text = input.value.trim();
     nomePassegero.innerText = text;
     input.value = "";
+    numeroKm.value = "";
+    eta.value = "";
 })
 button.addEventListener("click" , function (){
     const textDue = (numeroKm.value.trim() * 0.21 );

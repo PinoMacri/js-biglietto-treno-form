@@ -1,4 +1,10 @@
-
+body {
+    background-image: linear-gradient(to left , rgb(2, 2, 2) , rgb(255, 64, 64) );
+}
 .contenitore-form {
     border-radius: 40px;
+}
+.principal {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black
 }

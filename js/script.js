@@ -3,6 +3,8 @@ const input = document.getElementById("input")
 const generatore = document.getElementById("generatore")
 const numeroKm = document.getElementById("numeroKm")
 const eta = document.getElementById("eta")
+const carrozza = document.getElementById("carrozza")
+const codiceCP = document.getElementById("codiceCP")
 let button = document.getElementById("button")
 
 const max = 18;
@@ -35,7 +37,16 @@ button.addEventListener("click" , function (){
     generatore.innerText = scontoBigDefinitivoTextDue.toFixed(2) ;
     }
 })
-
+button.addEventListener("click" , function (){
+   const random = Math.random();
+   const randomNumber = Math.floor (random * 10) + 1 ;
+   carrozza.innerText= randomNumber;
+})
+button.addEventListener("click" , function (){
+    const random = Math.random();
+    const randomNumber = Math.floor (random * 10000) + 1 ;
+    codiceCP.innerText= randomNumber;
+ })
 
 
 

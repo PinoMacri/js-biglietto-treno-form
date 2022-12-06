@@ -21,8 +21,6 @@ button.addEventListener("click" , function (){
     const text = input.value.trim();
     nomePassegero.innerText = text;
     input.value = "";
-    numeroKm.value = "";
-    eta.value = "";
 })
 button.addEventListener("click" , function (){
     const textDue = (numeroKm.value.trim() * 0.21 );
@@ -44,6 +42,7 @@ button.addEventListener("click" , function (){
    const random = Math.random();
    const randomNumber = Math.floor (random * 10) + 1 ;
    carrozza.innerText= randomNumber;
+
 })
 button.addEventListener("click" , function (){
     const random = Math.random();

@@ -1,3 +1,4 @@
+/*NON RIPETO I PUNTI COMMENTATI IN QUANTO SONO UGUALI AL VECCHIO ESERCIZIO*/
 const nomePassegero = document.getElementById("nomePassegero")
 const input = document.getElementById("input")
 const generatore = document.getElementById("generatore")
@@ -23,7 +24,7 @@ button.addEventListener("click" , function (){
 })
 button.addEventListener("click" , function (){
     const textDue = (numeroKm.value.trim() * 0.21 );
-    generatore.innerText = textDue.toFixed(2) ;
+    generatore.innerText = textDue.toFixed(2) + euro;
     generatore.value = "";
     let scontoTextDue = textDue * 20 / 100;
     let scontoDefinitivoTextDue = textDue - scontoTextDue;
@@ -31,10 +32,10 @@ button.addEventListener("click" , function (){
     let scontoBigDefinitivoTextDue = textDue - scontoBigTextDue;
 
     if (eta.value < max ) {
-    generatore.innerText = scontoDefinitivoTextDue.toFixed(2) ;
+    generatore.innerText = scontoDefinitivoTextDue.toFixed(2) + euro ;
     }
     else if (eta.value  >= min ) {
-    generatore.innerText = scontoBigDefinitivoTextDue.toFixed(2) ;
+    generatore.innerText = scontoBigDefinitivoTextDue.toFixed(2) + euro ;
     }
 })
 button.addEventListener("click" , function (){

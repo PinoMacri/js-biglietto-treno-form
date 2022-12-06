@@ -6,42 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-danger">
+    <section class="bigliettoTreno">
+        <div class="container">
 
-    <form action="">
-        <h2>nome e cognome</h2>
-        <input id="input" type="text">
+            <div class="titoloGenerale text-center p-3">
+                <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            </div>
 
-        <h2>km da percorrere</h2>
-        <input id="numeroKm" type="number">
+            <form action="">
+                <div class="contenitore-form d-flex flex-wrap text-center justify-content-between bg-white">
+                    <div class="p-4 col-4">
+                        <h2 class="pb-3">Nome e Cognome</h2>
+                        <input id="input" type="text">
+                    </div>
+                    <div class="p-4 col-4 ">
+                        <h2 class="pb-3">Km da percorrere</h2>
+                        <input id="numeroKm" type="number" min="10">
+                    </div>
+                    <div class="p-4 col-4">
+                        <h2 class="pb-3">La tua Eta'</h2>
+                        <input id="eta" type="number" min="5">
+                    </div>
+                    <div class="text-center col-12 p-4">
+                        <button type="button" id="button">Genera</button>
+                        <button type="reset">Annulla</button>
+                    </div>
+                </div>
+            </form>
 
-        <h2>fascia d'eta</h2>
-        <input id="eta" type="number">
+            <div>
+                <div class="titoloGenerale text-center p-3">
+                    <h1 class="text-white">IL TUO BIGLIETTO</h1>
+                </div>
+                <div class="bg-white rounded p-4">
+                    <div>
+                        <h2>
+                            DETTAGLIO PASSEGGERI
+                        </h2>
+                    </div>
 
-        <br>
+                    <div class="d-flex justify-content-center p-4">
+                        <div>
+                            <div class="p-4">
+                                <h2>Nome Passeggero</h2>
+                            </div>
+                            <div id="nomePassegero" class="text-center">
 
-        <button type="button" id="button">Genera</button>
-        <button type="reset">Annulla</button>
-    </form>
+                            </div>
+                        </div>
 
-    <div id="nomePassegero">
+                        <div >
+                            <div class="p-4">
+                                <h2>Offerta</h2>
+                            </div>
+                            <div id="offerta" class="text-center">
+                                <p>Biglietto Standard</p>
+                            </div>
+                        </div>
 
-    </div>
+                        <div >
+                            <div class="p-4">
+                                <h2>Carrozza</h2>
+                            </div>
+                            <div id="carrozza" class="text-center">
 
-    <div id="generatore">
+                            </div>
+                        </div>
 
-    </div>
+                        <div>
+                            <div class="p-4">
+                                <h2>Codice CP</h2>
+                            </div>
+                            <div id="codiceCP" class="text-center">
 
-    <div id="carrozza">
+                            </div>
+                        </div>
 
-    </div>
+                        <div>
+                            <div class="p-4">
+                                <h2>Costo Biglietto</h2>
+                            </div>
+                            <div id="generatore" class="text-center">
 
-    <div id="codiceCP">
-
-    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
